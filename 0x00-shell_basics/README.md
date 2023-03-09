@@ -10,13 +10,13 @@
 
 5-listfilesdigitonly - Display current directory contents. Long format with user and group IDs displayed numerically And hidden files (starting with .)<br>
 
-6-firstdirectory - Create a script that creates a directory named school in the /tmp/ directory.<br>
+6-firstdirectory - Create a script that creates a directory in the /tmp/ directory.<br>
 
-7-movethatfile - Move the file betty from /tmp/ to /tmp/school.<br>
+7-movethatfile - Move the file betty from /tmp/ <br>
 
-8-firstdelete - Delete the file betty. The file betty is in /tmp/school<br>
+8-firstdelete - Delete the file betty. <br>
 
-9-firstdirdeletion - Delete the directory holberton that is in the /tmp directory.<br>
+9-firstdirdeletion - Delete the directory that is in the /tmp directory.<br>
 
 10-back - Write a script that changes the working directory to the previous one.<br>
 
