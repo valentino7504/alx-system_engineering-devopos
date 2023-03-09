@@ -1,1 +1,31 @@
- All the files in nhere are to solve the ALX shell permissions project
+ 1-who_am_i - Write a script that prints the effective userid of the current user.<br>
+
+4-empty - Write a script that creates an empty file called hello.<br>
+
+2-groups - Write a script that prints all the groups the current user is part of.<br>
+
+3-new_owner - Write a script that changes the owner of the file hello to the user betty.<br>
+
+5-execute - Write a script that adds execute permission to the owner of the file hello. The file hello will be in the working directory<br>
+
+6-multiple_permissions - Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file hello. The file hello will be in the working directory.<br>
+
+7-everybody - Write a script that adds execution permission to the owner, the group owner and the other users, to the file hello. The file hello will be in the working directory, You are not allowed to use commas for this script<br>
+
+8-James_Bond - Write a script that sets the permission to the file hello as follows:<br> Owner: no permission at all <br>Group: no permission at all <br>Other users: all the permissions <br>The file hello will be in the working directory. You are not allowed to use commas for this script<br>
+
+9-John_Doe - Write a script that sets the mode of the file hello to this: -rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello The file hello will be in the working directory You are not allowed to use commas for this script<br>
+
+10-mirror_permissions - Write a script that sets the mode of the file hello the same as olleh’s mode. The file hello will be in the working directory The file olleh will be in the working directory
+<br>
+11-directories_permissions - Create a script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.<br>
+
+12-directory_permissions - Create a script that creates a directory with permissions 751 in the working directory.<br>
+
+13-change_group - Write a script that changes the group owner for the file hello The file hello will be in the working directory<br>
+
+14-change_owner_and_group - Write a script that changes the owner to betty and the group owner to holberton for all the files and directories in the working directory.<br>
+
+15-symbolic_link_permissions - Write a script that changes the owner and the group owner of the file _hello to betty and holberton respectively. The file _hello is in the working directory The file _hello is a symbolic link<br>
+
+16-if_only - Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume. The file hello will be in the working directory<br>
