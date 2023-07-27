@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# ls special print
+list="$(ls)"
+for item in $list; do
+    item_name=$(echo "$item" | cut -d "-" -f 2-)
+    echo "$item_name"
+done
