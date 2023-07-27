@@ -3,6 +3,7 @@
 schoolfile="school"
 if [ -e $schoolfile ]
 then
+    echo "school file exists"
     if [ -s $schoolfile ]
     then
         echo "school file is not empty"
