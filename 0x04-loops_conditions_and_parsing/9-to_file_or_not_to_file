@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # school file checker
-schoollfile="school"
-if [ -e $schoollfile ]
+schoolfile="school"
+if [ -e $schoolfile ]
 then
-    if [ -s $schoollfile ]
+    if [ -s $schoolfile ]
     then
         echo "school file is not empty"
     else
         echo "school file is empty"
     fi
-    if [ -f $schoollfile ]
+    if [ -f $schoolfile ]
     then
-        echo "school file is a regular file"
+        echo "school is a regular file"
     fi
 else
     echo "school file does not exist"
