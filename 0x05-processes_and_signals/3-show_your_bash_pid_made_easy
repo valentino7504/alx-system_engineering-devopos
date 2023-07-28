@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 # Prints processes with "bash"
-for value in $(pidof bash); do
-    echo "$value bash"
-done
+pgrep -l bash
