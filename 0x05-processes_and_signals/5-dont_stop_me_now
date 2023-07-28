@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kills task 4
+pid_val=$(pidof ./4-to_infinity_and_beyond)
+kill -9 "$pid_value"
