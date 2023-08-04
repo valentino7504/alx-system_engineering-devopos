@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script changes the localhost to 127.0.0.2
+# and facebook.com to 8.8.8.8
+cp /etc/hosts ~/hosts.config
+echo -e "127.0.0.2\tlocalhost" > ~/hosts.config
+echo -e "8.8.8.8\t\tfacebook.com" >> ~/hosts.config
+cp -f ~/hosts.config /etc/hosts
