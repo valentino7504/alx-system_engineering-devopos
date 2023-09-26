@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# 404 page
+apt-get update -y
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+service nginx start
+echo 'Hello World!' > /var/www/html/index.html
+sed -i "/^\sserver_name.*/a\	rewrite ^/redirect_me https://first-lhc.vercel.app permanent;" /etc/nginx/sites-available/default;
+echo 'Ceci n'\''est pas une page' > /var/www/html/404.html
+sed -i '/^\s*server_name _;/ a\\n\tlocation / {\n\t\terror_page 404 /404.html;\n\t\terror_page 403 404 =404;\n\t}' /etc/nginx/sites-available/default
+service nginx restart
