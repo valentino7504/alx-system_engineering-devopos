@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# solution to task 3
+apt-get update
+apt-get install -y nginx
+ufw allow 'Nginx HTTP'
+service nginx start
+echo 'Hello World!' > /var/www/html/index.html
+sed -i "/^\sserver_name.*/a\	rewrite ^/redirect_me https://first-lhc.vercel.app permanent;" /etc/nginx/sites-available/default;
+service nginx restart
