@@ -10,4 +10,4 @@ USER="$3"
 SSH_KEY="$4"
 OPTIONS="StrictHostKeyChecking=no"
 
-scp -o $OPTIONS -i "$SSH_KEY" "$FILE_PATH" "$USER"@"IP":~/
+scp -o $OPTIONS -i "$SSH_KEY" "$FILE_PATH" "$USER"@"$IP":~/
