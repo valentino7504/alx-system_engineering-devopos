@@ -1,0 +1,5 @@
+sudo ufw default deny incoming
+sudo ufw allow 'Nginx Http'
+sudo ufw allow 'Nginx Https'
+sudo ufw allow OpenSSH
+sudo ufw enable
