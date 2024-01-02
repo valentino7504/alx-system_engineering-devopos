@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-'''
+"""
+This module is used to get a response from a REST API
+It gets the todo list of an employee with a specific ID
+The ID is accepted via argv
+Requests are made using the requests module
+"""
 
-gets data from a REST API
 
-'''
 import requests
 import sys
 
