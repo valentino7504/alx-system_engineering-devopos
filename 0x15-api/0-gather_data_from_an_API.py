@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 '''
+
 gets data from a REST API
+
 '''
 import requests
 import sys
