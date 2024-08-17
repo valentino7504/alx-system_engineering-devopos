@@ -22,8 +22,8 @@ def number_of_subscribers(subreddit):
         "Chrome/127.0.0.0 Safari/537.36"}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
     response = requests.get(url, headers=headers, allow_redirects=False)
+    response = response.json()
     try:
-        response = response.json()
         return response.get("data").get("subscribers")
     except Exception:
         return 0
